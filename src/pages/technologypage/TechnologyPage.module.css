@@ -1,0 +1,121 @@
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -100;
+  background-image: url("../../assets/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #ffffff;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+}
+
+.content__body {
+  margin: 20rem 0rem 0rem 10rem;
+}
+
+.content__body__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10rem;
+}
+
+.content__body > p {
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.4725rem;
+  text-transform: uppercase;
+  padding-left: 5rem;
+}
+
+.content__body > p > span {
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  padding-right: 1rem;
+}
+
+.content__body__container__tabs {
+  margin-inline: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 60%;
+  gap: 4rem;
+}
+
+.content__body__container__tabs > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.content__body__container__tabs > div p {
+  display: inline-block;
+  margin-block: 0;
+  margin-inline: 0;
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  letter-spacing: 2px;
+}
+
+.content__body__container__writeup {
+  max-width: 40%;
+}
+
+.content__body__container__writeup .intro {
+  text-transform: uppercase;
+  margin-top: auto;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+}
+
+.content__body__container__writeup .terminology {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 64px;
+}
+
+.content__body__container__writeup .description {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 32px;
+  color: #d0d6f9;
+  max-width: 85%;
+}
+
+.active {
+  /* background-color: #171f41 !important; */
+}
+.content__body__content__image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  /* align-self: flex-end; */
+  max-width: 40%;
+}
+
+.content__body__content__image img {
+  width: 100%;
+  height: auto;
+  /* justify-items: flex-end; */
+}

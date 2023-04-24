@@ -1,0 +1,123 @@
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -100;
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #ffffff;
+  font-style: normal;
+}
+
+.main__container {
+  padding: 15rem 15rem 0rem;
+}
+
+.main__container__h1 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.4725rem;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+.main__container__h1 span {
+  font-weight: 700;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  margin-right: 1rem;
+}
+
+.main__container__sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 5rem;
+}
+
+.main__container__image img {
+  height: auto;
+  width: 100%;
+}
+
+.main__container__writeup__container {
+  max-width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main__container__tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+.main__container__tabs > div {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.main__container__tabs > div:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.active {
+  border-bottom: 2px solid #ffffff !important;
+}
+.main__container__writeup h1 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  text-transform: uppercase;
+  margin: 4rem 0rem;
+}
+
+.main__container__writeup p {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: #d0d6f9;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #383b4b;
+}
+
+.main__container__writeup__container .kinematics {
+  display: flex;
+}
+
+.main__container__writeup__container .kinematics div {
+  padding-right: 6rem;
+}
+
+.main__container__writeup__container .kinematics h5 {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.23625rem;
+  text-transform: uppercase;
+  color: #d0d6f9;
+  margin-top: auto;
+}
+.main__container__writeup__container .kinematics p {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-top: auto;
+}
