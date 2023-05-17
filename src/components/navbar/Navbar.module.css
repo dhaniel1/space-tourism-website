@@ -88,21 +88,15 @@
 
   .menubtn {
     display: flex;
-    /* margin-right: 1rem; */
   }
 
   .navContainer {
-    margin: 2rem 5rem 1rem 5rem;
+    margin: 2rem 1.5rem 1rem;
   }
 }
 
 
 @media screen and (min-width: 549.9px) and (max-width: 1050px) {
-
-  .navContainer__listItemsContainer {
-    /* display: none; */
-  }
-
   .navContainer {
     margin: 2rem 0 1rem 5rem;
   }
