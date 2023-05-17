@@ -7,33 +7,32 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: -100;
+  right: 0;
   background-image: url("../../assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  display: flex;
+  margin: 0 auto;
 }
 
 .main_container {
-  margin-top: 20%;
+  max-width: 1800px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%;
-  padding-inline: 10rem;
+  padding: 40vh 12rem 0;
 }
 
-.main__container__writeup {
+.main__writeup {
   display: flex;
   flex-direction: column;
   color: #d0d6f9;
   width: 40%;
- text-align: left ;
+  text-align: left;
 }
 
-.main__container__writeup .header {
+.main__writeup>.header {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
@@ -45,7 +44,7 @@
   margin: 0;
 }
 
-.main__container__writeup span {
+.header>span {
   font-family: "Bellefair", serif;
   font-weight: 400;
   font-size: 15rem;
@@ -53,7 +52,7 @@
   color: #ffffff;
 }
 
-.main__container__writeup .body {
+.main__writeup>.body {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;

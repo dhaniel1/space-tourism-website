@@ -15,11 +15,11 @@ function DestinationPage() {
   return (
     <div className={style.main}>
       <div className={style.main__container}>
-        <h1 className={style.main__container__h1}>
-          <span>01</span>Pick your destination
-        </h1>
         <div className={style.main__container__sub}>
           <div className={style.main__container__image}>
+            <h1 className={style.main__container__h1}>
+              <span>01</span>Pick your destination
+            </h1>
             <img src={section.image} alt="a moon" />
           </div>
           <div className={style.main__container__writeup__container}>

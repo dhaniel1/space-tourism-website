@@ -13,15 +13,15 @@ function CrewPage() {
   }
 
   console.log(section);
-  
+
   return (
     <div className={style.main}>
       <div className={style.content__body}>
-        <p>
-          <span>02</span>Meet your crew
-        </p>
         <div className={style.content__body__content}>
           <div className={style.content__body__content__writeup}>
+            <p>
+              <span>02</span>Meet your crew
+            </p>
             <h5 className={style.profession}>{section.profession}</h5>
             <h1 className={style.name}>{section.name}</h1>
             <p className={style.description}>{section.description}</p>

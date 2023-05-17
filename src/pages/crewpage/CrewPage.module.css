@@ -2,12 +2,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: -100;
+  right: 0;
   background-image: url("../../assets/crew/background-crew-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  margin: 0 auto;
   font-size: 1.6rem;
   color: #ffffff;
   font-family: "Barlow Condensed";
@@ -16,11 +16,17 @@
 }
 
 .content__body {
-  margin: 20rem 10rem 0rem;
+  /* margin: 20rem 10rem 0rem; */
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40vh 12rem 0;
   /* padding: 5rem 20rem; */
 }
 
-.content__body > p {
+.content__body__content__writeup>p:first-child {
   font-weight: 400;
   font-size: 2.8rem;
   line-height: 3.4rem;
@@ -29,7 +35,7 @@
 
 }
 
-.content__body > p > span {
+.content__body__content__writeup>p:first-child>span {
   mix-blend-mode: normal;
   opacity: 0.25;
   padding-right: 1rem;
@@ -62,6 +68,7 @@
   line-height: 6.4rem;
   text-transform: uppercase;
 }
+
 .content__body__content__writeup .description {
   font-family: "Barlow";
   font-style: normal;
@@ -73,10 +80,10 @@
 }
 
 .content__body__content__writeup .tabs {
- display: flex;
+  display: flex;
 }
 
-.content__body__content__writeup .tabs > div{
+.content__body__content__writeup .tabs>div {
   height: 1rem;
   width: 1rem;
   background-color: #ffffff;
@@ -85,7 +92,7 @@
   /* padding-inline: 1rem; */
 }
 
-.active{
+.active {
   background-color: #171f41 !important;
 
 }

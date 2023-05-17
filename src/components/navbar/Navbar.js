@@ -13,7 +13,7 @@ function Logo() {
 
 function Navbar() {
   return (
-    <header>
+    <header className={style.navbar}>
       <nav className={style.navContainer}>
         <Logo />
         <div className={style.navContainer__listItemsContainer}>

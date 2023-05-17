@@ -2,8 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: -100;
+  right: 0;
   background-image: url("../../assets/technology/background-technology-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,18 +12,31 @@
   font-style: normal;
 }
 
-.content__body {
-  margin: 20rem 0rem 0rem 10rem;
-}
-
-.content__body__container {
+.main__container {
+  /* margin: 20rem 0rem 0rem 10rem; */
+  max-width: 1800px;
+  margin: 0 auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 10rem;
+  padding: 20vh 12rem 0;
+  /* Take note of here*/
 }
 
-.content__body > p {
+.main__writeup {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.writeup__container {
+  display: flex;
+  gap: 2rem;
+  flex-grow: 1;
+
+}
+
+.main__writeup>p {
   font-weight: 400;
   font-size: 2.8rem;
   line-height: 3.4rem;
@@ -33,13 +45,13 @@
   padding-left: 5rem;
 }
 
-.content__body > p > span {
+.content__body>p>span {
   mix-blend-mode: normal;
   opacity: 0.25;
   padding-right: 1rem;
 }
 
-.content__body__container__tabs {
+.writeup__tabs {
   margin-inline: 3rem;
   display: flex;
   flex-direction: column;
@@ -48,7 +60,7 @@
   gap: 4rem;
 }
 
-.content__body__container__tabs > div {
+.writeup__tabs>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +72,7 @@
   cursor: pointer;
 }
 
-.content__body__container__tabs > div p {
+.writeup__tabs>div p {
   display: inline-block;
   margin-block: 0;
   margin-inline: 0;
@@ -71,11 +83,11 @@
   letter-spacing: 2px;
 }
 
-.content__body__container__writeup {
-  max-width: 40%;
+.writeup__texts {
+  max-width: 100%;
 }
 
-.content__body__container__writeup .intro {
+.writeup__texts .intro {
   text-transform: uppercase;
   margin-top: auto;
   font-weight: 400;
@@ -85,7 +97,7 @@
   color: #d0d6f9;
 }
 
-.content__body__container__writeup .terminology {
+.writeup__texts .terminology {
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
@@ -93,7 +105,7 @@
   line-height: 64px;
 }
 
-.content__body__container__writeup .description {
+.writeup__texts .description {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
@@ -103,19 +115,14 @@
   max-width: 85%;
 }
 
-.active {
-  /* background-color: #171f41 !important; */
-}
-.content__body__content__image {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  /* align-self: flex-end; */
-  max-width: 40%;
+
+.main__image {
+  width: 100%;
+  align-self: flex-start;
 }
 
-.content__body__content__image img {
-  width: 100%;
+.main__image>img {
   height: auto;
+  width: 100%;
   /* justify-items: flex-end; */
 }
