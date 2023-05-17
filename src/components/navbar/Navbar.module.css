@@ -79,7 +79,8 @@
   /* border-bottom: rgba(0, 0, 0, 0) solid 2px; */
 }
 
-@media (max-width: 500px) {
+
+@media screen and (max-width: 550px) {
 
   .navContainer__listItemsContainer {
     display: none;
@@ -96,7 +97,7 @@
 }
 
 
-@media (max-width: 1050px) {
+@media screen and (min-width: 549.9px) and (max-width: 1050px) {
 
   .navContainer__listItemsContainer {
     /* display: none; */
