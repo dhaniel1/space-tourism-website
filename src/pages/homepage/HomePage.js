@@ -5,7 +5,7 @@ function WriteUp() {
   return (
     <div className={style.main__writeup}>
       <p className={style.header}>
-        So you want to travel to <br /> <span>space</span>
+        So you want to travel to <span>space</span>
       </p>
       <p className={style.body}>
         Let’s face it, if you want to go to space, you might as well genuinely
@@ -23,7 +23,7 @@ function HomePage() {
       <div className={style.main}>
         <div className={style.main_container}>
           <WriteUp />
-          <div className={style.main__container__explore}>
+          <div className={style.explore}>
             <p>explore</p>
           </div>
         </div>

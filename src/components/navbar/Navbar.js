@@ -16,7 +16,12 @@ function Navbar() {
     <header className={style.navbar}>
       <nav className={style.navContainer}>
         <Logo />
-        <div className={style.navContainer__listItemsContainer}>
+        <div className={style.menubtn}>
+          <div className={style.btn_line}></div>
+          <div className={style.btn_line}></div>
+          <div className={style.btn_line}></div>
+        </div>
+        <div className={`${style.navContainer__listItemsContainer}`}>
           <ul>
             <li>
               <NavLink
@@ -26,7 +31,7 @@ function Navbar() {
                     ? `${style.navContainer__listItems} ${style.active}`
                     : `${style.navContainer__listItems}`
                 }>
-                00 <span>Home</span>
+                Home <span>00</span>
               </NavLink>
             </li>
             <li>
@@ -37,7 +42,7 @@ function Navbar() {
                     ? `${style.navContainer__listItems} ${style.active}`
                     : `${style.navContainer__listItems}`
                 }>
-                01 <span>Destination</span>
+                Destination <span>01</span>
               </NavLink>
             </li>
             <li>
@@ -48,7 +53,7 @@ function Navbar() {
                     ? `${style.navContainer__listItems} ${style.active}`
                     : `${style.navContainer__listItems}`
                 }>
-                02 <span>Crew</span>
+                Crew <span>02</span>
               </NavLink>
             </li>
             <li>
@@ -59,7 +64,7 @@ function Navbar() {
                     ? `${style.navContainer__listItems} ${style.active}`
                     : `${style.navContainer__listItems}`
                 }>
-                03 <span>Technology</span>
+                Technology <span>03</span>
               </NavLink>
             </li>
           </ul>
