@@ -1,31 +1,13 @@
 import "./App.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import {
-  CrewPage,
-  DestinationPage,
-  HomePage,
-  RootLayout,
-  TechnologyPage,
-} from "./pages";
+import Navbar from "./components/navbar/Navbar";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  const routers = createBrowserRouter([
-    {
-      path: "/",
-      element: <RootLayout />,
-      children: [
-        { index: true, element: <HomePage /> },
-        { path: "destination", element: <DestinationPage /> },
-        { path: "crew", element: <CrewPage /> },
-        { path: "technology", element: <TechnologyPage /> },
-      ],
-    },
-  ]);
-
   return (
-    <>
-      <RouterProvider router={routers} />
-    </>
+    <div className="body">
+      <Navbar />
+      <Outlet />
+    </div>
   );
 }
 

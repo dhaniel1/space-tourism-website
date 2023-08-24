@@ -29,7 +29,7 @@
 .menubtn {
   display: none;
   flex-direction: column;
-  gap: .7rem;
+  gap: 0.7rem;
   cursor: not-allowed;
   padding: 1rem;
 }
@@ -38,7 +38,6 @@
   width: 3rem;
   height: 3px;
   background: #ffffff;
-
 }
 
 .navContainer ul {
@@ -79,9 +78,7 @@
   /* border-bottom: rgba(0, 0, 0, 0) solid 2px; */
 }
 
-
 @media screen and (max-width: 550px) {
-
   .navContainer__listItemsContainer {
     display: none;
   }
@@ -95,14 +92,13 @@
   }
 }
 
-
 @media screen and (min-width: 549.9px) and (max-width: 1050px) {
   .navContainer {
     margin: 2rem 0 1rem 5rem;
   }
 
   .navContainer ul {
-    padding: .5rem 5rem .5rem 1.5rem;
+    padding: 0.5rem 5rem 0.5rem 1.5rem;
   }
 
   .navContainer__listItemsContainer li {
@@ -113,5 +109,4 @@
   .navContainer__listItemsContainer li span {
     display: none;
   }
-
 }

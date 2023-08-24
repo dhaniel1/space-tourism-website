@@ -17,20 +17,21 @@ function Navbar() {
       <nav className={style.navContainer}>
         <Logo />
         <div className={style.menubtn}>
-          <div className={style.btn_line}></div>
-          <div className={style.btn_line}></div>
-          <div className={style.btn_line}></div>
+          {Array.from({ length: 3 }).map(() => (
+            <div className={style.btn_line}></div>
+          ))}
         </div>
         <div className={`${style.navContainer__listItemsContainer}`}>
           <ul>
             <li>
-              <NavLink
+              <NavLink // These navlink components shouln't repeat itself. Create an object and loop through it all
                 to={"/"}
                 className={({ isActive }) =>
                   isActive
                     ? `${style.navContainer__listItems} ${style.active}`
                     : `${style.navContainer__listItems}`
-                }>
+                }
+              >
                 Home <span>00</span>
               </NavLink>
             </li>
@@ -41,7 +42,8 @@ function Navbar() {
                   isActive
                     ? `${style.navContainer__listItems} ${style.active}`
                     : `${style.navContainer__listItems}`
-                }>
+                }
+              >
                 Destination <span>01</span>
               </NavLink>
             </li>
@@ -52,7 +54,8 @@ function Navbar() {
                   isActive
                     ? `${style.navContainer__listItems} ${style.active}`
                     : `${style.navContainer__listItems}`
-                }>
+                }
+              >
                 Crew <span>02</span>
               </NavLink>
             </li>
@@ -63,7 +66,8 @@ function Navbar() {
                   isActive
                     ? `${style.navContainer__listItems} ${style.active}`
                     : `${style.navContainer__listItems}`
-                }>
+                }
+              >
                 Technology <span>03</span>
               </NavLink>
             </li>

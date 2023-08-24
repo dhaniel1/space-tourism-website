@@ -32,7 +32,7 @@
   text-align: left;
 }
 
-.main__writeup>.header {
+.main__writeup > .header {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
@@ -44,7 +44,7 @@
   margin: 0;
 }
 
-.header>span {
+.header > span {
   font-family: "Bellefair", serif;
   font-weight: 400;
   font-size: 15rem;
@@ -53,7 +53,7 @@
   display: block;
 }
 
-.main__writeup>.body {
+.main__writeup > .body {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
@@ -101,8 +101,8 @@
     text-align: center;
   }
 
-  .main__writeup>.header {
-    font-size: .7rem;
+  .main__writeup > .header {
+    font-size: 0.7rem;
     font-size: 14px;
     line-height: 19px;
     text-align: center;
@@ -111,7 +111,7 @@
     display: block;
   }
 
-  .header>span {
+  .header > span {
     display: block;
     font-size: 50px;
     line-height: normal;
@@ -139,7 +139,6 @@
     left: 50%;
     transform: translate(-40%, -40%);
   }
-
 }
 
 @media screen and (min-width: 380.5px) and (max-width: 550px) {
@@ -162,7 +161,7 @@
     text-align: center;
   }
 
-  .main__writeup>.header {
+  .main__writeup > .header {
     font-weight: 400;
     font-size: 1rem;
     font-size: 16px;
@@ -173,7 +172,7 @@
     display: block;
   }
 
-  .header>span {
+  .header > span {
     display: block;
     font-size: 88px;
     line-height: normal;
@@ -201,7 +200,6 @@
     left: 50%;
     transform: translate(-40%, -40%);
   }
-
 }
 
 @media screen and (min-width: 549.9px) and (max-width: 1050px) {
@@ -224,7 +222,7 @@
     text-align: center;
   }
 
-  .main__writeup>.header {
+  .main__writeup > .header {
     font-weight: 400;
     font-size: 2.5rem;
     line-height: 19px;
@@ -233,7 +231,7 @@
     display: block;
   }
 
-  .header>span {
+  .header > span {
     display: block;
     font-size: 150px;
     line-height: 150px;
@@ -261,5 +259,4 @@
     left: 50%;
     transform: translate(-40%, -40%);
   }
-
 }
